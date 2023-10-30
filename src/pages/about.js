@@ -2,10 +2,12 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import React from 'react'
 import AnimatedText from '@/components/AnimatedText'
-// import profilePic from '../../public/images/profile/developer-pic-2.jpg'
 import { PhoneOutlined } from '@ant-design/icons';
 import { SendOutlined } from '@ant-design/icons';
 import Typewriter from 'typewriter-effect';
+import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
+import Link from 'next/link';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const about = () => {
 
@@ -15,6 +17,7 @@ const about = () => {
                 <title>Dewcode | About Page</title>
                 <meta name="description" content='any description' />
             </Head>
+            <TransitionEffect />
             <main className=''>
                 <Layout className='pt-16'>
                     <AnimatedText text="About me" className='mb-0' />
@@ -118,9 +121,30 @@ const about = () => {
                         </div>
                     </div>
                 </Layout>
+                <Link href="/projects">
+                    <button
+                        className='bg-red-800 border-2 w-20 h-20 absolute  top-1/2 right-0  flex items-center justify-center'
+                    >
+                        <MdOutlineArrowForwardIos
+                            className="text-white"
+                            style={{ fontSize: '22px' }}
+                        />
+                    </button>
+                </Link>
+
+                <Link href='/'>
+                    <button
+                        className='bg-red-800 border-2 w-20 h-20 absolute  top-1/2 left-0  flex items-center justify-center'
+                    >
+                        <MdOutlineArrowBackIos
+                            className="text-white"
+                            style={{ fontSize: '22px' }}
+                        />
+                    </button>
+                </Link>
             </main>
         </>
     )
 }
-
 export default about
+

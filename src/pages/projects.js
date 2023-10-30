@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FeatureProjects = ({ type, title, summary, img, link, github }) => {
     return (
@@ -28,6 +29,7 @@ const projects = () => {
                 <title>Dewcode | Projects Page</title>
                 <meta name="description" content='any description' />
             </Head>
+            <TransitionEffect />
             <main>
                 <Layout className='pt-16'>
                     <div className='grid grid-cols-12 gap-24'>
@@ -51,6 +53,27 @@ const projects = () => {
                         </div>
                     </div>
                 </Layout>
+                <Link href="/activity">
+                    <button
+                        className='bg-red-800 border-2 w-20 h-20 absolute  top-1/2 right-0  flex items-center justify-center'
+                    >
+                        <MdOutlineArrowForwardIos
+                            className="text-white"
+                            style={{ fontSize: '22px' }}
+                        />
+                    </button>
+                </Link>
+
+                <Link href='/about'>
+                    <button
+                        className='bg-red-800 border-2 w-20 h-20 absolute  top-1/2 left-0  flex items-center justify-center'
+                    >
+                        <MdOutlineArrowBackIos
+                            className="text-white"
+                            style={{ fontSize: '22px' }}
+                        />
+                    </button>
+                </Link>
             </main>
         </>
     )

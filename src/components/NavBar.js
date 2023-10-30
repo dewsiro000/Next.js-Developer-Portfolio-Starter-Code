@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
-import { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon } from './Icons';
+import { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, ProjectIcon } from './Icons';
 import { motion } from 'framer-motion';
-
 
 const CustomLink = ({ href, title, className = '' }) => {
     const router = useRouter();
@@ -44,17 +43,17 @@ const NavBar = () => {
                 >
                     <TwitterIcon />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"} className='w-6 mx-3'
+                <motion.a href="https://github.com/dewsiro000" target={"_blank"} className='w-6 mx-3'
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
                 >
                     <GithubIcon />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"} className='w-6 mx-3'
+                <motion.a href="/projects" className='w-6 mx-3'
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <LinkedInIcon />
+                    <ProjectIcon />
                 </motion.a>
                 <motion.a href="https://twitter.com" target={"_blank"} className='w-6 mx-3'
                     whileHover={{ y: -2 }}
@@ -62,7 +61,7 @@ const NavBar = () => {
                 >
                     <PinterestIcon />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"} className='w-6 ml-3'
+                <motion.a href="/activity" className='w-6 ml-3'
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
                 >

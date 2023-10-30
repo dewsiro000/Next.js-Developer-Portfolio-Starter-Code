@@ -1,4 +1,7 @@
 import * as React from "react";
+import project from '../../public/images/projects/plan-list-svgrepo-com (2).svg'
+import Person from '../../public/images/svgs/person-round-svgrepo-com.svg'
+import Image from "next/image";
 
 export const GithubIcon = ({ className, ...rest }) => (
     <svg
@@ -16,6 +19,25 @@ export const GithubIcon = ({ className, ...rest }) => (
         />
     </svg>
 );
+
+export const ProjectIcon = ({ className, ...rest }) => (
+    <div className="w-8 h-auto">
+        <Image
+            src={project}
+            alt="Project Icon" {...rest}
+        />
+    </div>
+);
+
+export const PersonIcon = ({ className, ...rest }) => (
+    <div className="w-8 h-auto">
+        <Person
+            src={project}
+            alt="Project Icon" {...rest}
+        />
+    </div>
+);
+
 
 export const TwitterIcon = ({ className, ...rest }) => (
     <svg
