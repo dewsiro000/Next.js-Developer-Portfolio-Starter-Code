@@ -9,17 +9,23 @@ const Footer = () => {
         '>
             <Layout className='py-8 flex items-center justify-between'>
                 <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
-                <div className='flex items-center'>
-                    Build With<span className='text-primary text-2xl px-1'>&#9825; </span>
-                    by&nbsp; <Link href="https://devdreaming.com" className='underline underline-offset-2'
-                        target={'_blank'}
-                    >CodeBucks</Link>
+                <div className='flex flex-col items-center' >
+                    <div className='text-lg'>
+                        Create<span className='px-1'>by</span>Norawit Paha
+                    </div>
+                    <div className='text-sm'>
+                        Credit <span className='text-primary text-sm px-1'>Starter</span><span className='px-1'>Template</span>
+                        by&nbsp; <Link href="https://devdreaming.com" className='underline underline-offset-2'
+                            target={'_blank'}
+                        >CodeBucks</Link>
+                    </div>
                 </div>
-                <Link href='https://devdreaming.com' target={'_blank'} className='underline
+                <div href='https://devdreaming.com' target={'_blank'} className='underline
                 underline-offset-2
-                '>Say hello</Link>
-            </Layout>
-        </footer>
+                '>Let<span className='px-1'>Start</span>Coding!!
+                </div>
+            </Layout >
+        </footer >
     )
 }
 

@@ -8,6 +8,7 @@ import Typewriter from 'typewriter-effect';
 import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
 import Link from 'next/link';
 import TransitionEffect from '@/components/TransitionEffect';
+// import TransitionEffect2 from '@/components/TransitonEffect2';
 
 const about = () => {
 
@@ -19,7 +20,7 @@ const about = () => {
             </Head>
             <TransitionEffect />
             <main className=''>
-                <Layout className='pt-16'>
+                <Layout className='pt-2 2xl:pt-16'>
                     <AnimatedText text="About me" className='mb-0' />
                     <p className='flex justify-center mb-16'>Get to know me</p>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
@@ -31,52 +32,18 @@ const about = () => {
                                     and user-centered digital experiences. With 6 month of experience in the Intelligent Automation
                                     Research CenterIntelligent Automation Research Center
                                     . I am always looking for
-                                    new and innovative ways to bring my clients' visions to life.
+                                    new and innovative ways to make more website that easy to use and convinient for our users.
                                 </p>
                                 <p className='my-4 font-medium'>
                                     I believe that design is about more than just making things look pretty – it's about solving problems and
-                                    creating intuitive, enjoyable experiences for users.
+                                    creating intuitive, which the user really wants to that.
                                 </p>
 
                                 <p className='font-medium'>
                                     Whether I'm working on a webapp, or
-                                    other digital product, I bring my commitment to design excellence and user-centered thinking to
-                                    every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
-
+                                    other eccomerce product, I bring my commitment to design excellence and user-centered thinking to
+                                    every project I work on. I look forward to the opportunity to bring my skills and passion to create more better and  new thing in my next project.
                                 </p>
-                                {/* <div>
-                                <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
-                                bg-light p-8
-                                '>
-                                    <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark'>
-                                        <Image src={profilePic} alt="Codebucks" className='w-full h-auto rounded-2xl' />
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <span>
-                                        50+
-                                    </span>
-                                    <h2>satisfield clients</h2>
-                                </div>
-
-                                <div>
-                                    <span>
-                                        50+
-                                    </span>
-                                    <h2>satisfield clients</h2>
-                                </div>
-
-                                <div>
-                                    <span>
-                                        50+
-                                    </span>
-                                    <h2>satisfield clients</h2>
-                                </div>
-                            </div> */}
-
-
                             </div>
                         </div>
                         <div className='border-2 border-black p-4 flex flex-col items-center  '>
