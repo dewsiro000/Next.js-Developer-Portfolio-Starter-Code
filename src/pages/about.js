@@ -28,19 +28,19 @@ const about = () => {
                             <div className='col-span-3 flex flex-col items-start justify-start'>
                                 <h2 className='mb-4 text-lg fonr-bold uppercase text-dark/75'>Biography</h2>
                                 <p className='font-medium'>
-                                    Hi, I'm Norawit Paha, a junior web developer  with a passion for creating beautiful, functional,
+                                    Hi, I am Norawit Paha, a junior web developer  with a passion for creating beautiful, functional,
                                     and user-centered digital experiences. With 6 month of experience in the Intelligent Automation
                                     Research CenterIntelligent Automation Research Center
                                     . I am always looking for
                                     new and innovative ways to make more website that easy to use and convinient for our users.
                                 </p>
                                 <p className='my-4 font-medium'>
-                                    I believe that design is about more than just making things look pretty – it's about solving problems and
+                                    I believe that design is about more than just making things look pretty – it is about solving problems and
                                     creating intuitive, which the user really wants to that.
                                 </p>
 
                                 <p className='font-medium'>
-                                    Whether I'm working on a webapp, or
+                                    Whether I am working on a webapp, or
                                     other eccomerce product, I bring my commitment to design excellence and user-centered thinking to
                                     every project I work on. I look forward to the opportunity to bring my skills and passion to create more better and  new thing in my next project.
                                 </p>
