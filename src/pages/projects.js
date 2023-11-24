@@ -39,19 +39,19 @@ import { GithubIcon } from '@/components/Icons';
 const Project = ({ type, title, summary, img, link, github }) => {
     const [isHovered, setIsHovered] = useState(false);
 
-   return(
-    <article className='w-full flex items-center justify-center rounded-2xl first-letter:
+    return (
+        <article className='w-full flex items-center justify-center rounded-2xl first-letter:
     border border-solid border-dark bg-light p-6 relative  '>
             <Link href={link} target="_blank"
                 className='w-full cursor-pointer overflow-hidden rounded-lg'
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-                <Image 
-                src={img} 
-                alt={title} 
-                className={`w-full h-auto transition-transform duration-300 transform-gpu ${isHovered ? 'hover:scale-105' : ''}`}
-                 />
+                <Image
+                    src={img}
+                    alt={title}
+                    className={`w-full h-auto transition-transform duration-300 transform-gpu ${isHovered ? 'hover:scale-105' : ''}`}
+                />
             </Link>
             <div className='w-full flex flex-col items-start justify-between pl-6'>
                 <span className='text-primary font-medium text-xl'>{type}</span>
@@ -59,16 +59,16 @@ const Project = ({ type, title, summary, img, link, github }) => {
                     <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
                 </Link>
                 <p className='my-2 font-medium text-dark'>{summary}</p>
-           <div className='mt-2 flex items-center'>
-            <Link href={github} target='_blank' className='w-10'><GithubIcon/></Link>
-            <Link href={link} target='_blank'
-            className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'
-            >Visit</Link>
-           </div>
+                <div className='mt-2 flex items-center'>
+                    <Link href={github} className='w-10'><GithubIcon /></Link>
+                    <Link href={link}
+                        className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'
+                    >Visit</Link>
+                </div>
             </div>
-    </article>
-   )
- 
+        </article>
+    )
+
 }
 
 const projects = () => {
@@ -81,7 +81,8 @@ const projects = () => {
             {/* <TransitionEffect /> */}
             <main>
                 <Layout className='pt-8 2xl:pt-16 '>
-                    <div className='grid grid-cols-2 2xl:grid-cols-12 gap-20 2xl:gap-24'>
+                    {/* <div className='grid grid-cols-2 2xl:grid-cols-12 gap-20 2xl:gap-24'> */}
+                    <div className='grid grid-cols-2 2xl:grid-cols-1 gap-20 2xl:gap-24'>
                         {/* <div className='col-span-12'>
                             <FeatureProjects
                                 title='xxxxxx'
@@ -96,20 +97,19 @@ const projects = () => {
                             />
                         </div> */}
                         <div className='col-span-6'>
-                        <Project
+                            <Project
                                 title='Hotel website management system'
                                 img={project1}
-                                summary= 'of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-                                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 
-                                1960s with the release of Letraset sheets containing Lorem Ipsum 
-                                passages, and more recently with desktop publishing software like Aldus PageMaker 
-                                including versions of Lorem.'
+                                summary='Developed a hotel website management system for hotels and hotel operators. This system consists 
+                                of subsystems within the main structure which provide a wealth of information for managing the user is 
+                                website data and layout.
+                                 various In and update information at any time through the back office administrator website manager.'
                                 link='/hotelweb_project'
                                 github='/hotelweb_project'
                                 type='Web App'
                             />
                         </div>
-                        <div className='col-span-6'>
+                        {/* <div className='col-span-6'>
                            <Project
                                 title='Hotel website management system'
                                 img={project2}
@@ -122,7 +122,7 @@ const projects = () => {
                                 github='/'
                                 type='Web App'
                             />
-                        </div>
+                        </div> */}
                         {/* <div className='col-span-12'>
                             Project1
                         </div>
