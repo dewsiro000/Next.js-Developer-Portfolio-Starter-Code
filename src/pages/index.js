@@ -60,16 +60,6 @@ export default function Home() {
                       <GithubOutlined style={{ fontSize: '24px', color: 'black' }} />
                     </motion.div>
                   </Link>
-                  <Link href={'https://www.instagram.com/dew_norr/'}>
-                    <motion.div whileHover="hover">
-                      <InstagramOutlined style={{ fontSize: '24px', color: 'black' }} />
-                    </motion.div>
-                  </Link>
-                  <Link href={'https://www.facebook.com/dew.zaa.35'}>
-                    <motion.div whileHover="hover">
-                      <YoutubeOutlined style={{ fontSize: '24px', color: 'black' }} />
-                    </motion.div>
-                  </Link>
                 </div>
               </div>
               <div className='flex-wrap border-2  border-black w-64 h-full bg-white p-4 '>
@@ -88,18 +78,21 @@ export default function Home() {
                 Explore my latest projects and articles, showcasing my expertise in React and Nextjs I am web development.
               </p>
               <div className='flex items-center self-start mt-2'>
-                <Link href="/dummy.pdf" target='_blank'
+                <Link href="/Norawit.pdf" target='_blank'
                   className='flex items-center bg-dark text-light p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-light  hover:text-dark
                   border border-solid boder-transparent hover:border-dark
                   '
                   download={true}
-                >Resume <LinkArrow className={"w-6 ml-1"} />
-
+                >
+                  Resume
+                  <LinkArrow className={"w-6 ml-1"} />
                 </Link>
-                <Link href="mailo:dewsiro000@gmail.com" target='_blank'
+                <Link href="mailto:norawit1267@gmail.com" target='_blank'
                   className='ml-4 text-lg fonr-medium capitalize text-dark underline'
-                >Contact</Link>
+                >
+                  Contact
+                </Link>
               </div>
             </div>
           </div>
@@ -138,10 +131,6 @@ export default function Home() {
             style={{ fontSize: '60px' }}
           />
         </motion.button>
-        {/* <HireMe /> */}
-        {/* <div className='absolute top-80 right-0 inline-block w-72'>
-          <Image src={Codepic} alt="Codebucks" className='w-full h-auto' />
-        </div> */}
       </main >
     </>
   )

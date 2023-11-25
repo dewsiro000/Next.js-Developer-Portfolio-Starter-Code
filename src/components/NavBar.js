@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
-import { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, ProjectIcon } from './Icons';
+import { GithubIcon } from './Icons';
 import { motion } from 'framer-motion';
+import { SolutionOutlined, FundProjectionScreenOutlined, ScheduleOutlined, HomeOutlined } from '@ant-design/icons';
 
 const CustomLink = ({ href, title, className = '' }) => {
     const router = useRouter();
@@ -27,37 +28,30 @@ const CustomLink = ({ href, title, className = '' }) => {
 const NavBar = () => {
     return (
         <header className='w-full px-32 py-8 font-medium flex items-center justify-between '>
-            <nav className='bg-white border-2 flex items-center justify-center flex-wrap'>
-                <motion.a href="https://twitter.com" target={"_blank"}
+            <nav className='bg-white border-2 flex items-center justify-center flex-wrap '>
+                <motion.a href="/about" className='w-6 mx-3'
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className='w-6 mr-3'
                 >
-                    <TwitterIcon />
+                    <HomeOutlined style={{ fontSize: '24px' }} />
                 </motion.a>
-                <motion.a href="https://github.com/dewsiro000" target={"_blank"} className='w-6 mx-3'
+                <motion.a href="/about" className='w-6 mx-3'
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <GithubIcon />
+                    <SolutionOutlined style={{ fontSize: '24px' }} />
                 </motion.a>
                 <motion.a href="/projects" className='w-6 mx-3'
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <ProjectIcon />
+                    <FundProjectionScreenOutlined style={{ fontSize: '24px' }} />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"} className='w-6 mx-3'
+                <motion.a href="/activity" className='w-6 ml-3 mx-3 pb-1'
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <PinterestIcon />
-                </motion.a>
-                <motion.a href="/activity" className='w-6 ml-3'
-                    whileHover={{ y: -2 }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    <DribbbleIcon />
+                    <ScheduleOutlined style={{ fontSize: '24px' }} />
                 </motion.a>
             </nav>
             <nav className='bg-white border p-4 '>
@@ -66,8 +60,6 @@ const NavBar = () => {
                 <CustomLink href="/projects" title="Projects" className='mx-4' />
                 <CustomLink href="/activity" title="Activity" className='ml-4' />
             </nav>
-
-
             {/* <div className='absolute left-[50%] top-2 translate-x-[-50%]'> */}
             <div className='flex'>
                 <Logo />

@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
+import Image from 'next/image'
 import React from 'react'
 import AnimatedText from '@/components/AnimatedText'
 import { PhoneOutlined } from '@ant-design/icons';
@@ -8,7 +9,7 @@ import Typewriter from 'typewriter-effect';
 import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
 import Link from 'next/link';
 import TransitionEffect from '@/components/TransitionEffect';
-// import TransitionEffect2 from '@/components/TransitonEffect2';
+import me from '../../public/images/profile/me.png.jpg'
 
 const about = () => {
 
@@ -26,6 +27,13 @@ const about = () => {
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
                         <div className='flex flex-col mr-14 items-center justify-center grid-cols-8 gap-16'>
                             <div className='col-span-3 flex flex-col items-start justify-start'>
+                                <div>
+                                    <Image src={me}
+                                        alt='MyImage'
+                                        className='w-48 h-48 border-2 border-black'
+                                        style={{ objectFit: 'cover' }}
+                                    />
+                                </div>
                                 <h2 className='mb-4 text-lg fonr-bold uppercase text-dark/75'>Biography</h2>
                                 <p className='font-medium'>
                                     Hi, I am Norawit Paha, a junior web developer  with a passion for creating beautiful, functional,
