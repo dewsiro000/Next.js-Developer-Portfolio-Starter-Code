@@ -72,7 +72,7 @@ export default function Home() {
               <AnimatedText text="I am Norawit Paha" className='!text=6xl' />
               <AnimatedText text="Frontend Developer" className='text-3xl text-green-700' />
               <p className='my-4 text-base font-medium bg-white p-2 bg-opacity-30'>
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
+                As a skilled frontend developer, I am dedicated to turning ideas into innovative web applications.
                 Explore my latest projects and articles, showcasing my expertise in React and Nextjs I am web development.
               </p>
               <div className='flex items-center self-start mt-2'>
