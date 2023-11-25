@@ -37,7 +37,7 @@ const about = () => {
                                             style={{ objectFit: 'fit' }}
                                         />
                                     </div>
-                                    <div className='px-10 flex-row flex gap-28'>
+                                    <div className='lg:px-10 2xl:px-32 flex-row flex gap-28'>
                                         <div>
                                             <p className='uppercase font-bold text-xl pb-4 pt-5 text-purple-800 shadow-orange-400 shadow-md p-3 cursor-pointer hover:text-red-400'>skills</p>
                                             <p className='font-semibold pb-2 pt-8'>Languages :</p>
@@ -109,7 +109,7 @@ const about = () => {
                             <div className='flex flex-row gap-0 pt-14'>
                                 <div className='w-full h-auto '>
 
-                                    <p class="flex pl-36">
+                                    <p class="flex lg:pl-36 2xl:pl-60">
                                         <b className="font-medium flex ">
                                             <PhoneOutlined
                                                 className=''
