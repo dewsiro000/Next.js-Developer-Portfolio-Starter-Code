@@ -80,7 +80,7 @@ const about = () => {
 
                                 <p className='font-medium'>
                                     Whether I am working on a webapp, or
-                                    other eccomerce product, I bring my commitment to design excellence and user-centered thinking to
+                                    other system mangement product, I bring my commitment to design excellence and user-centered thinking to
                                     every project I work on. I look forward to the opportunity to bring my skills and passion to create more better and  new thing in my next project.
                                 </p>
                             </div>

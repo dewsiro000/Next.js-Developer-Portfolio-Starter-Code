@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import admin_form from '../../public/videos/Back-of-house-manager.mp4'
 import activity1 from '../../public/images/projects/368179460_1044114376914378_6709878042645860710_n.jpg'
@@ -11,7 +11,7 @@ import activity7 from '../../public/images/projects/398515985_1316484262350881_2
 import activity8 from '../../public/images/projects/405179275_706308724792595_7615723347910346891_n.jpg'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css';
-import { useAnimation, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 const hotelweb = ({ className = "" }) => {

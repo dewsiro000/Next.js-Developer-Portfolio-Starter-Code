@@ -4,9 +4,9 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
 import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
-import TransitionEffect from '@/components/TransitionEffect';
+// import TransitionEffect from '@/components/TransitionEffect';
 import project1 from '../../public/images/projects/Screenshot 2023-10-31 001837.png'
-import project2 from '../../public/images/projects/agency-website-cover-image.jpg'
+// import project2 from '../../public/images/projects/agency-website-cover-image.jpg'
 import { GithubIcon } from '@/components/Icons';
 
 // const FeatureProjects = ({ type, title, summary, img, link, github }) => {
@@ -60,7 +60,7 @@ const Project = ({ type, title, summary, img, link, github }) => {
                 </Link>
                 <p className='my-2 font-medium text-dark'>{summary}</p>
                 <div className='mt-2 flex items-center'>
-                    <Link href={github} className='w-10'><GithubIcon /></Link>
+                    <Link href={github} target='_blank' className='w-10'><GithubIcon /></Link>
                     <Link href={link}
                         className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'
                     >Visit</Link>
@@ -105,7 +105,7 @@ const projects = () => {
                                 website data and layout.
                                  various In and update information at any time through the back office administrator website manager.'
                                 link='/hotelweb_project'
-                                github='/hotelweb_project'
+                                github='https://github.com/dewsiro000'
                                 type='Web App'
                             />
                         </div>
