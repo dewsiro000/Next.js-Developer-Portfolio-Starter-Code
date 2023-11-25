@@ -10,6 +10,8 @@ import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md'
 import Link from 'next/link';
 import TransitionEffect from '@/components/TransitionEffect';
 import me from '../../public/images/profile/me.png.jpg'
+import coding_gif from '../../public/gif/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966.gif'
+
 
 const about = () => {
 
@@ -27,14 +29,43 @@ const about = () => {
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
                         <div className='flex flex-col mr-14 items-center justify-center grid-cols-8 gap-16'>
                             <div className='col-span-3 flex flex-col items-start justify-start'>
-                                <div>
-                                    <Image src={me}
-                                        alt='MyImage'
-                                        className='w-48 h-48 border-2 border-black'
-                                        style={{ objectFit: 'cover' }}
-                                    />
+                                <div className='flex flex-row '>
+                                    <div>
+                                        <Image src={me}
+                                            alt='MyImage'
+                                            className='w-40 h-full border-2 border-black'
+                                            style={{ objectFit: 'fit' }}
+                                        />
+                                    </div>
+                                    <div className='px-10 flex-row flex gap-28'>
+                                        <div>
+                                            <p className='uppercase font-bold text-xl pb-4 pt-5 text-purple-800 shadow-orange-400 shadow-md p-3 cursor-pointer hover:text-red-400'>skills</p>
+                                            <p className='font-semibold pb-2 pt-8'>Languages :</p>
+                                            <p>-  JavaScript</p>
+                                            <p>-  HTML/CSS</p>
+                                            <p className='font-semibold pb-2 pt-14'>Frameworks:</p>
+                                            <p>-  React.js</p>
+                                            <p>-  Next.js</p>
+                                            <p>-  Nodejs</p>
+                                            <p>-  Tailwind</p>
+                                            <p>-  Bootstrap</p>
+                                            <p>-  Material UI</p>
+                                        </div>
+                                        <div>
+                                            <p className='font-semibold pb-2 pt-24'>tools :</p>
+                                            <p>-  Postman</p>
+                                            <p>-  Github</p>
+                                            <p>-  Vscode</p>
+                                            <p>-  ChatGPT</p>
+                                            <p className='font-semibold pb-2 pt-5'> Databases : </p>
+                                            <p>-  Mongo DB</p>
+                                            <p className='font-semibold pb-2 pt-5'>Otherskills:</p>
+                                            <p>-  Restfull-API</p>
+                                            <p>-  React Hook</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h2 className='mb-4 text-lg fonr-bold uppercase text-dark/75'>Biography</h2>
+                                <h2 className='mb-4 text-xl font-bold uppercase text-green-600 pt-10 underline decoration-black '>Biography</h2>
                                 <p className='font-medium'>
                                     Hi, I am Norawit Paha, a junior web developer  with a passion for creating beautiful, functional,
                                     and user-centered digital experiences. With 6 month of experience in the Intelligent Automation
@@ -54,7 +85,7 @@ const about = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='border-2 border-black p-4 flex flex-col items-center  '>
+                        <div className='border-2 border-black p-4 flex flex-col items-center '>
                             <div className='text-xl pt-3'>
                                 <Typewriter
                                     options={{
@@ -78,19 +109,29 @@ const about = () => {
                             <div className='flex flex-row gap-0 pt-14'>
                                 <div className='w-full h-auto '>
 
-                                    <p class="flex ">
+                                    <p class="flex pl-36">
                                         <b className="font-medium flex ">
                                             <PhoneOutlined
                                                 className=''
                                                 style={{ fontSize: '26px', color: '#08c', bottom: '2px', paddingRight: '10px' }}
                                             />
                                             Phone:</b>&nbsp;&nbsp; 093-165-6128</p>
-                                    <p className='pt-12'>
+                                    <p className='flex justify-center pt-12'>
                                         <b class="font-medium">
                                             <SendOutlined
                                                 style={{ fontSize: '26px', color: '#08c', bottom: '2px', paddingRight: '10px' }}
                                             />
-                                            Email:</b>&nbsp;&nbsp;&nbsp;norawit1267@gmail.com </p>
+                                            Email:
+                                        </b>&nbsp;&nbsp;&nbsp;norawit1267@gmail.com
+                                    </p>
+                                    <div className='pt-10 flex justify-center'>
+                                        <Image
+                                            src={coding_gif}
+                                            alt='MyImage'
+                                            className='w-full h-full  border-2 border-black'
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
