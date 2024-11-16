@@ -41,6 +41,8 @@ const about = () => {
                                         <div>
                                             <p className='uppercase font-bold text-xl pb-4 pt-5 text-purple-800 shadow-orange-400 shadow-md p-3 cursor-pointer hover:text-red-400'>skills</p>
                                             <p className='font-semibold pb-2 pt-8'>Languages :</p>
+                                            <p>-  C++</p>
+                                            <p>-  Python</p>
                                             <p>-  JavaScript</p>
                                             <p>-  HTML/CSS</p>
                                             <p className='font-semibold pb-2 pt-14'>Frameworks:</p>
@@ -58,6 +60,7 @@ const about = () => {
                                             <p>-  Vscode</p>
                                             <p>-  ChatGPT</p>
                                             <p className='font-semibold pb-2 pt-5'> Databases : </p>
+                                            <p>-  SQL</p>
                                             <p>-  Mongo DB</p>
                                             <p className='font-semibold pb-2 pt-5'>Otherskills:</p>
                                             <p>-  Restfull-API</p>
@@ -98,7 +101,7 @@ const about = () => {
                             <div className='flex flex-row gap-24 pt-14'>
                                 <div className='w-full h-auto '>
                                     <p class="flex "> <b className="font-medium ">Name:</b>&nbsp;&nbsp; Norawit Paha</p>
-                                    <p className='pt-12'> <b class="font-medium">Age:</b>&nbsp;&nbsp;&nbsp;22 </p>
+                                    <p className='pt-12'> <b class="font-medium">Age:</b>&nbsp;&nbsp;&nbsp;23 </p>
 
                                 </div>
                                 <div className='w-full  h-auto'>

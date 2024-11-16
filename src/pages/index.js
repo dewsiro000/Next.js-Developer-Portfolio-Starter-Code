@@ -48,11 +48,11 @@ export default function Home() {
                   style={{ objectFit: 'cover' }}
                 />
                 <div className='flex gap-2 justify-center pt-2'>
-                  <Link href={'https://www.facebook.com/dew.zaa.35'}>
+                  {/* <Link href={'https://www.facebook.com/dew.zaa.35'}>
                     <motion.div whileHover="hover">
                       <FacebookOutlined style={{ fontSize: '24px', color: 'black' }} />
                     </motion.div>
-                  </Link>
+                  </Link> */}
                   <Link href={'https://github.com/dewsiro000'}>
                     <motion.div whileHover="hover">
                       <GithubOutlined style={{ fontSize: '24px', color: 'black' }} />
@@ -62,7 +62,7 @@ export default function Home() {
               </div>
               <div className='flex-wrap border-2  border-black w-64 h-full bg-white p-4 '>
                 <p>Name: Norawit Paha</p>
-                <p>Age: 22</p>
+                <p>Age: 23</p>
                 <p>sex: Male</p>
                 <p>Religion : Buddhist</p>
               </div>
@@ -70,9 +70,9 @@ export default function Home() {
             <div className='pr-60 w-full flex flex-col  items-center self-center'>
               <AnimatedText text="Hello" className='!text=6xl text-red-700' /><br></br>
               <AnimatedText text="I am Norawit Paha" className='!text=6xl' />
-              <AnimatedText text="Frontend Developer" className='text-3xl text-green-700' />
+              <AnimatedText text="Software Developer" className='text-3xl text-green-700' />
               <p className='my-4 text-base font-medium bg-white p-2 bg-opacity-30'>
-                As a skilled frontend developer, I am dedicated to turning ideas into innovative web applications.
+                As a skilled Fullstack developer, I am dedicated to turning ideas into innovative web applications.
                 Explore my latest projects and articles, showcasing my expertise in React and Nextjs I am web development.
               </p>
               <div className='flex items-center self-start mt-2'>
